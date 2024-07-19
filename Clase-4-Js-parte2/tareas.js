@@ -6,7 +6,17 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
+  let gato = {
+    nombre:nombre,
+    edad:edad,
+    meow:function(){
+        return "Meow"
+    }
+
 }
+return gato;
+}
+const gato1 = crearGato("Pepito",5);
 
 
 function agregarPropiedad(objeto, property) {
@@ -14,6 +24,12 @@ function agregarPropiedad(objeto, property) {
   // Devuelve el objeto
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
+  const miNuevoObjeto= {
+    objeto:"Chevrolet",
+    property:"Onix",
+    precio:23000000,
+  }
+  agregarPropiedad((miNuevoObjeto.push("anio")))
 }
 
 function invocarMetodo(objeto, metodo) {
@@ -27,6 +43,10 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
+  for (let i = 0; i < objetoMisterioso.length; i++) {
+        
+  }
+  return objetoMisterioso * 5
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -34,19 +54,37 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
+  const miObjeto ={ 
+    objeto:"mesa",
+    unaPropiedad:"Madera",
+    anio:1563
+}
+ eliminarPropiedad(miObjeto["unaPropiedad".pop])
 }
 
 function nuevoUsuario(nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
+  let nuevoUsuario = {
+    nombre:"Romina",
+    email:"romina150",
+    password:2587,
+}
+return nuevoUsuario;
 }
 
 function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
+  const usuario ={
+    nombre:"Juan",
+    email:"juancito@mail.com"
+  }
+  if(usuario===email) return "true"
 }
+return "false"
 
 
 
@@ -55,6 +93,7 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+
 }
 
 function verificarPassword(usuario, password) {

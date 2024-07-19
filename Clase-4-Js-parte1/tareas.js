@@ -3,16 +3,27 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un array
   // Tu código:
+  const frutas = ["uva","manzana","naranja"];
+
+  frutas[0];
+
 }
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  const frutas = ["pera","manzana","naranja"];
+
+  frutas[2];
 }
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  const numeros = [0,1,2,3,4,5,6,7];
+
+  ["total numeros", numeros.length];
+
 }
 
 function incrementarPorUno(array) {
@@ -20,12 +31,20 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+
+  const marcas = ["Ford","Chevrolet","Fiat","Audi","Aston Martin"];
+
+  marcas[marcas.length+1]
+
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  const empleados = ["Marisa","Julian","Sandra","Carolina"];
+  empleados.push("Roberto");
+  
 }
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -33,6 +52,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  const paises = ["España","Francia","Irlanda"];
+  paises.unshift("Argentina");
 }
 
 function dePalabrasAFrase(palabras) {
@@ -47,6 +68,11 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  const numeroPar = [2,4,6,8,10,12];
+  if (arrayContiene === numeroPar) {
+    return true
+  }
+   arrayContiene[2]
 }
 
 function agregarNumeros(numeros) {
@@ -102,6 +128,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  let mayoresQueCien = [];
+  for (let i = 0; i < array.length; i++) {
+    if(array[i] > 100) mayoresQueCien.push(array[i])
+    
+  }
+  return mayoresQueCien;
+  
 }
 
 // No modificar nada debajo de esta línea, de lo contrario no correrán los test.
